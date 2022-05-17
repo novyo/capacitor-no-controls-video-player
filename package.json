@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorVideoPlayer.podspec"
+    "CapacitorNoControlsVideoPlayer.podspec"
   ],
   "author": "Jean Pierre Quéau",
   "license": "MIT",
