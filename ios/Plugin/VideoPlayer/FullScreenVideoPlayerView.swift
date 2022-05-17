@@ -130,6 +130,7 @@ open class FullScreenVideoPlayerView: UIView {
         self.player?.currentItem?.audioTimePitchAlgorithm = .timeDomain
         self.videoPlayer.player = self.player
         self.videoPlayer.allowsPictureInPicturePlayback = false
+        self.videoPlayer.showsPlaybackControls = false
         if isPIPModeAvailable && self._pipEnabled {
             self.videoPlayer.allowsPictureInPicturePlayback = true
         }
