@@ -503,7 +503,7 @@ public class CapacitorVideoPlayerPlugin: CAPPlugin {
             if let playerView = self.videoPlayerFullScreenView {
                 DispatchQueue.main.async {
                     if playerView.isPlaying {
-                        playerView.dismiss(animated: true)
+                        playerView.pause()
                     }
                     call.resolve([ "result": true, "method": "stopAllPlayers", "value": true])
                     return
