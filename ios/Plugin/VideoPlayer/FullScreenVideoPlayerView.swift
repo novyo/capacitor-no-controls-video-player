@@ -310,7 +310,11 @@ open class FullScreenVideoPlayerView: UIView {
     }
     @objc func pause() {
         self.isPlaying = false
-        self.videoPlayer?.dismiss(animated: true)
+        self.player?.pause()
+    }
+    @objc func stop() {
+        self.isPlaying = false
+        self.videoPlayer.dismiss(animated: true)
     }
     @objc func didFinishPlaying() -> Bool {
         return isVideoEnded
