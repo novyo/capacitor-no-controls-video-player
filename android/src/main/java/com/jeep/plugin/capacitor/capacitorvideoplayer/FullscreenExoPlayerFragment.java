@@ -151,21 +151,21 @@ public class FullscreenExoPlayerFragment extends Fragment {
         constLayout = view.findViewById(R.id.fsExoPlayer);
         linearLayout = view.findViewById(R.id.linearLayout);
         playerView = view.findViewById(R.id.videoViewId);
-
         Pbar = view.findViewById(R.id.indeterminateBar);
         closeBtn = view.findViewById(R.id.exo_close);
         pipBtn = view.findViewById(R.id.exo_pip);
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N || !pipEnabled) {
-            pipBtn.setVisibility(View.GONE);
-        }
+        pipBtn.setVisibility(View.GONE);
+        linearLayout.setVisibility(View.VISIBLE);
+
         playerView.requestFocus();
-        linearLayout.setVisibility(View.INVISIBLE);
+        playerView.hideController();
         playerView.setControllerShowTimeoutMs(3000);
         playerView.setControllerVisibilityListener(
             new PlayerControlView.VisibilityListener() {
                 @Override
                 public void onVisibilityChange(int visibility) {
-                    linearLayout.setVisibility(visibility);
+                    //linearLayout.setVisibility(visibility);
+                    playerView.hideController();
                 }
             }
         );
@@ -855,7 +855,6 @@ public class FullscreenExoPlayerFragment extends Fragment {
                     stateString = "ExoPlayer.STATE_READY     -";
                     Pbar.setVisibility(View.GONE);
                     playerView.setUseController(true);
-                    linearLayout.setVisibility(View.INVISIBLE);
                     Log.v(TAG, "**** in ExoPlayer.STATE_READY firstReadyToPlay " + firstReadyToPlay);
 
                     if (firstReadyToPlay) {

@@ -1,7 +1,7 @@
 {
-  "name": "capacitor-video-player",
+  "name": "capacitor-no-controls-video-player",
   "version": "3.4.2",
-  "description": "custom Native Capacitor plugin to play a video",
+  "description": "Custom Native Capacitor plugin to play a fullscreen video without controls",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jepiqueau/capacitor-video-player.git"
+    "url": "git+https://github.com/novyo/capacitor-no-controls-video-player.git"
   },
   "bugs": {
-    "url": "https://github.com/jepiqueau/capacitor-video-player/issues"
+    "url": "https://github.com/novyo/capacitor-no-controls-video-player/issues"
   },
   "keywords": [
     "capacitor",
