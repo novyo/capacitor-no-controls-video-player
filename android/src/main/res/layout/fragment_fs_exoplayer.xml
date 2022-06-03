@@ -45,7 +45,6 @@
             style="@style/ExoMediaButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="0"
             android:scaleX="1"
             android:scaleY="1"
             android:src="@drawable/back" />
