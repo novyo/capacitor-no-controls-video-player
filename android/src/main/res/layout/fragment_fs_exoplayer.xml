@@ -54,9 +54,9 @@
             android:id="@+id/exo_pip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
+            android:layout_margin="5dp"
+            android:scaleX="1"
+            android:scaleY="1"
             style="@style/ExoMediaButton"
             android:background="@android:color/transparent"
             android:src ="@drawable/ic_pip_white"/>
